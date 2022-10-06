@@ -22,7 +22,7 @@ npm install
     "date": "12-12-2022"
 }
 ```
-The *id* and *date* are automatically generated.
+The *id* and *dateBooked* are automatically generated.
 - Flight updates with __PUT__ requests can be identical to the body of the __POST__ request or with ommissions.
 
 ### Tech/Tools Used:
