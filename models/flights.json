@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Flight to Paris",
+        "time": "7am",
+        "price": "100usd",
+        "date": "2022-10-06T06:32:45.190Z"
+    },
+    {
+        "id": 2,
+        "title": "Flight to London",
+        "time": "10am",
+        "price": "200usd",
+        "date": "2022-10-06T06:58:34.254Z"
+    }
+]
