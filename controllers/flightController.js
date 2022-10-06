@@ -1,5 +1,6 @@
 const fsPromises = require('fs').promises;
 const path = require('path');
+const {format} = require('date-fns')
 
 // Import data of all flights from json file
 const flightsData = require('../models/flights.json')
@@ -50,7 +51,7 @@ exports.bookFlight = async (req, res) => {
     const newFlight = {
         id: flightsData.length ? flightsData[flightsData.length - 1].id + 1 : 1,
         ...flightDetails,
-        date: new Date()
+        dateBooked: format(new Date(), 'dd-MM-yyyy')
     }
     const newFlightsData = [...flightsData, newFlight]
     await fsPromises.writeFile(

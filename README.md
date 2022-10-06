@@ -2,7 +2,6 @@
 This project implements CRUD concepts and also follows the MVC software architecture to manage flight bookings.
 
 ### Features:
-- Express & Nodemon modules
 - A dummy database of users and their info: **Flights.js**
 - Routes to carry out tasks:
     - */flights*: to get all the flights booked
@@ -19,7 +18,8 @@ npm install
 {
     "title": "Flight to Bali",
     "time": "10am",
-    "price": "250usd"
+    "price": "250usd",
+    "date": "12-12-2022"
 }
 ```
 The *id* and *date* are automatically generated.
@@ -28,4 +28,7 @@ The *id* and *date* are automatically generated.
 ### Tech/Tools Used:
 - JavaScript
 - NodeJS and NPM
+- Express
+- Nodemon
+- date-fns
 - Thunder Client
