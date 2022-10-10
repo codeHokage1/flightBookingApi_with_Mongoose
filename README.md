@@ -1,8 +1,8 @@
 # Flight Booking API
-This project implements CRUD concepts and also follows the MVC software architecture to manage flight bookings.
+This project implements CRUD concepts, follows the MVC software architecture to manage flight bookings and saves all data in a MongoDb cloud database.
 
 ### Features:
-- A dummy database of users and their info: **Flights.js**
+- A Schema, Model and Configuration to connect with MongoDB collection using Mongoose
 - Routes to carry out tasks:
     - */flights*: to get all the flights booked
     - */flights/:id*: to get, update and delete a specific flight by id
@@ -13,6 +13,9 @@ This project implements CRUD concepts and also follows the MVC software architec
 ```
 npm install
 ```
+- Create a MongoDB account and a database collection
+- Create a **.env** file that contains the connection string
+- Modify the **config/dbConfig.js** file accordingly to use the connection string 
 - While adding a new flight, the body of the __POST__ request should be similar to:
 ```
 {
@@ -28,6 +31,7 @@ The *id* and *dateBooked* are automatically generated.
 ### Tech/Tools Used:
 - JavaScript
 - NodeJS and NPM
+- Mongoose
 - Express
 - Nodemon
 - date-fns
